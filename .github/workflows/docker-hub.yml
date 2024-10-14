@@ -56,4 +56,4 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
           build-args: |
-            "items=tinydolphin tinyllama codegemma"
+            "items=tinydolphin codegemma codegemma:2b"
