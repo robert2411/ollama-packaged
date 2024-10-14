@@ -20,6 +20,16 @@ jobs:
     name: Push Docker image to Docker Hub
     runs-on: ubuntu-latest
     steps:
+      - name: Free Disk Space
+        uses: jlumbroso/free-disk-space@v1.3.1
+        with:
+          large-packages: false
+          docker-images: false
+          tool-cache: true
+          android: true
+          dotnet: true
+          haskell: true
+          swap-storage: true
       - name: Check out the repo
         uses: actions/checkout@v3
 
